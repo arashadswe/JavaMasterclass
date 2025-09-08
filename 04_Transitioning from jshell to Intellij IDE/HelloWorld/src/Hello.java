@@ -20,6 +20,10 @@ public class Hello {
             System.out.println("Greater than second top score and less than 100");
         }
 
+        String makeOfCar = "Volkswagen";
+        boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+
+
 
     }
 
