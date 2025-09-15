@@ -7,7 +7,11 @@ public class Main {
         int dateOfBirth = Integer.parseInt(userDateOfBirth);
 
         System.out.println("Age = " + (currentYear - dateOfBirth));
-        System.out.println(getInputFromConsole(currentYear));
+        try {
+            System.out.println(getInputFromConsole(currentYear));
+        } catch (NullPointerException e) {
+            System.out.println(getInputFromConsole(currentYear));
+        }
     }
 
     public static String getInputFromConsole(int currentYear) {
